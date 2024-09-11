@@ -1,0 +1,32 @@
+.btn-navv {
+  position: relative;
+}
+.btn-navv::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  bottom: -2px;
+  left: 0px;
+  transition: 0.3s ease;
+}
+.btn-navv:hover::before {
+  width: 100%;
+}
+.activee::before {
+  width: 100%;
+}
+
+/* .btn-banner {
+  background-color: #fff;
+  color: black;
+} */
+.btn-banner:hover {
+  color: white;
+  transform: translateY(-5px);
+}
+.btn-banner:not(:hover) {
+  background-color: #fff;
+  color: black;
+}
